@@ -8,21 +8,8 @@ REGULARIZATION = 0.0
 KERNEL_INITIALIZER = 'he_normal'
 
 
-
-
-(tf) H:\ss_github\keras>python cifar10.py
 Using TensorFlow backend.
 Using data augmentation.
-2018-07-12 18:54:55.653095: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
-2018-07-12 18:54:55.874793: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1356] Found device 0 with properties:
-name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7845
-pciBusID: 0000:01:00.0
-totalMemory: 6.00GiB freeMemory: 4.96GiB
-2018-07-12 18:54:55.879365: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1435] Adding visible gpu devices: 0
-2018-07-12 18:54:56.483446: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
-2018-07-12 18:54:56.487130: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:929]      0
-2018-07-12 18:54:56.489584: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:942] 0:   N
-2018-07-12 18:54:56.492147: I C:\users\nwani\_bazel_nwani\mmtm6wb6\execroot\org_tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1053] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4724 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
 Epoch 1/200
 391/391 [==============================] - 15s 40ms/step - loss: 1.5510 - acc: 0.4501 - val_loss: 1.4371 - val_acc: 0.5123
 Epoch 2/200
