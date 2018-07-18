@@ -1,2 +1,5 @@
 Programming exercise of facial keypoints detection from kaggle.
-Ref: https://www.kaggle.com/c/facial-keypoints-detection
+Ref: 
+  https://www.kaggle.com/c/facial-keypoints-detection
+  https://imgaug.readthedocs.io/en/latest/source/examples_keypoints.html
+  http://cs231n.stanford.edu/reports/2016/pdfs/010_Report.pdf
