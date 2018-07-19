@@ -1,3 +1,7 @@
+"""
+Udacity facial keypoints detection project.
+Training and test data may not be totally right.
+"""
 import numpy as np
 import keras
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, Reshape

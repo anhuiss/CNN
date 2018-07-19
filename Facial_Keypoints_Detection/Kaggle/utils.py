@@ -1,3 +1,6 @@
+"""
+Convinence functions for facial keypoints detection.
+"""
 import pandas as pd
 import numpy as np
 import keras
@@ -6,7 +9,6 @@ import keras.backend as K
 import matplotlib.pyplot as plt
 import imgaug as ia
 from imgaug import augmenters as iaa
-
 
 def process_data(file, is_training=True):
     """

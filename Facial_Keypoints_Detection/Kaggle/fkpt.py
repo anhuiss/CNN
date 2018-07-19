@@ -1,3 +1,6 @@
+"""
+Training a model to detect facial keypoints with data augmentation.
+"""
 import keras
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,12 +28,12 @@ def main():
     
     # Callbacks
     save_dir = 'tmp/saved_model/weights.{epoch:02d}-{val_loss:.2f}.hdf5'
-    hists = History()
     ckpt = keras.callbacks.ModelCheckpoint(save_dir,
                                            monitor='val_loss',
                                            verbose=1,
                                            save_best_only=True,
                                            period=25)
+    hists = History()
     
     callbacks=[hists, ckpt]
     

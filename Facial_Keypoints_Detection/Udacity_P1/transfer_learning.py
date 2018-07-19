@@ -1,3 +1,6 @@
+"""
+Try to use features extracted from vgg16 to detect facial keypoints.
+"""
 import keras
 import numpy as np
 from keras.layers import Flatten, Dense, Dropout, Reshape
