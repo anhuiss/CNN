@@ -1,2 +1,2 @@
 # CNN
-Programming exercises for training convolutional neural networks.
+Programming exercises for convolutional neural networks.
