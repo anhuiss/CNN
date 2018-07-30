@@ -22,19 +22,19 @@ def inception_block(X, filters, stage, initializer='he_normal'):
     f1, f3_r, f3, f5_r, f5, fp = filters
     basename = 'stage' + str(stage) + '_'
     
-    X_1 = Conv2D(f1, kernel_size=3, padding='SAME', activation='relu',
+    X_1 = Conv2D(f1, kernel_size=1, padding='SAME', activation='relu',
                  kernel_initializer=initializer, name=basename+'1_1')(X)
-    X_3_reduce = Conv2D(f3_r, kernel_size=3, padding='SAME', activation='relu',
+    X_3_reduce = Conv2D(f3_r, kernel_size=1, padding='SAME', activation='relu',
                         kernel_initializer=initializer, name=basename+'3_3_reduce')(X)
     X_3 = Conv2D(f3, kernel_size=3, padding='SAME', activation='relu',
                  kernel_initializer=initializer, name=basename+'3_3')(X)
-    X_5_reduce = Conv2D(f5_r, kernel_size=3, padding='SAME', activation='relu',
+    X_5_reduce = Conv2D(f5_r, kernel_size=1, padding='SAME', activation='relu',
                         kernel_initializer=initializer, name=basename+'5_5_reduce')(X)
-    X_5 = Conv2D(f5, kernel_size=3, padding='SAME', activation='relu',
+    X_5 = Conv2D(f5, kernel_size=5, padding='SAME', activation='relu',
                  kernel_initializer=initializer, name=basename+'5_5')(X)
     X_pooling = MaxPool2D(pool_size=(3, 3), strides=(1, 1), padding='SAME',
                           name=basename+'incep_pool')(X)
-    X_p = Conv2D(fp, kernel_size=3, padding='SAME', activation='relu',
+    X_p = Conv2D(fp, kernel_size=1, padding='SAME', activation='relu',
                  kernel_initializer=initializer, name=basename+'pool_1_1')(X)
     
     output = keras.layers.concatenate([X_1, X_3, X_5, X_p], axis=-1)

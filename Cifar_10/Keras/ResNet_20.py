@@ -123,8 +123,8 @@ def ResNet_20(input_shape, n_classes, data_format, initializer='he_normal',
     Model structure:
         CONV-BN-RELU
         IDBLOCK(filters=16)*3
-        IDBLOCK(filters=32)*3
-        IDBLOCK(filters=64)*3
+        CONVBLOCK-IDBLOCK(filters=32)*2
+        CONVBLOCK-IDBLOCK(filters=64)*2
         AVGPOOL
         FLATTEN
         FC

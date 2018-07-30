@@ -7,7 +7,7 @@ the following model architecture:
 """
 import keras
 from Inception import inception_v1
-from cifar10_utils import get_cifar10, History
+from cifar10_utils import History, get_cifar10
 
 # Training parameters
 LEARNING_RATE = 1e-3
